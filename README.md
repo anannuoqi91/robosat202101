@@ -91,7 +91,7 @@ docker run -it --rm -v $PWD:/data --ipc=host --network=host mapbox/robosat:lates
 >     `--size SIZE` size of rasterized image tiles in pixels (default: 512)
 
   这里使用到了 `dataset-building.toml` 配置文件，文件中配置了瓦片地图路径、分类方式、蒙版标记的颜色等信息。示例配置可以查看官方示例文件 [dataset-parking.toml](https://github.com/mapbox/robosat/blob/master/config/dataset-parking.toml) ，配置内容如下：
-  （**classes中的buildings在示例文件中是parking，该值只在矢量化过程中有影响，目前features代码提供parking的矢量化，但是矢量化代码存在一些bug有待修复**）
+  （**classes中的buildings在示例文件中是parking，该值只在矢量化过程中有影响，目前features代码提供parking的矢量化，但是矢量化代码存在一些bug有待修复，具体待测试osm中的矢量化代码**）
 
 ```toml
 # Configuration related to a specific dataset.
